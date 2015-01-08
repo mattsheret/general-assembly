@@ -1,0 +1,26 @@
+body{
+	background-color: #FFE;
+	border-style: solid;
+}
+
+h1{}
+
+h2{
+	color: #887;
+	font-size: 15px;
+}
+
+h3{}
+
+img{
+	border-style: double;
+	float: right;
+}
+
+a{
+	color:#900;
+}
+
+li{
+	color: #887;
+}

@@ -1,0 +1,63 @@
+.box {
+  border: 1px solid black;
+  background-color: #efefef;
+  margin: 0.5em;
+  padding: 3em;
+}
+
+/* General rule to help 'clear' floated elements nested inside */
+header,
+section,
+footer {
+  width: 100%;
+  float: left;
+}
+
+/* Header Section */
+
+header .logo {
+  width: 30%;
+  float: left;
+}
+
+header nav {
+  width: 70%;
+  float: right;
+  text-align: right;
+}
+
+nav ul {
+  float: right;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  float: left;
+}
+
+nav .box {
+  padding: 1em;
+}
+
+/* Page Content Section */
+
+.column {
+  float: left;
+}
+
+.small-columns .column {
+  width: 33.33%;
+}
+
+.full-width .box {
+  min-height: 200px;  
+}
+
+.small-columns .column .box {
+  min-height: 100px;
+}

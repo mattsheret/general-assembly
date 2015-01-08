@@ -1,0 +1,141 @@
+/*You need to wrap the articles in something new, and then you need to float the sidebar left so it goes alongside the new wrapper. Don't float right. Sort it out*/
+
+
+
+header h1,
+footer p{
+	margin-left: 40px;
+}
+
+html {
+	border-left: 6px solid gray;
+}
+
+/*Header*/
+
+header{
+	width: 100%;
+}
+
+header h1{
+}
+
+header nav {
+  	width: 100%;
+  	float: left;
+  	margin: 0 40px;
+}
+
+header nav ul{
+  	padding:0;
+  	margin:0;
+  	list-style: none;
+}
+
+header nav ul li {
+  	float: left;
+  	display: inline-block;
+  	background-color: gray;
+  	width: calc(100%/6);
+  	padding: 0;
+  	margin:0;
+  	list-style: none;
+  	text-align: center;
+}
+
+header nav ul li a {
+  	display: inline-block;
+  	background-color: gray;
+  	padding: 20px;
+  	text-align: center;
+}
+
+/*Articles*/
+
+.main{
+	margin: 40px;
+}
+
+article{
+	float: left;
+	width: 65%;
+	margin: 0;
+	padding-bottom: 60px;
+	border-bottom: 1px solid gray;
+}
+
+article img{
+	max-width: 100%;
+}
+
+.continue{
+	float: right;
+
+}
+
+/*Sidebar*/
+
+aside{
+	float: right;
+	width: 30%;
+}
+
+.about,
+.ad{
+	padding: 60px 0;
+	border-bottom: 1px solid gray;
+}
+
+.related{
+	padding: 60px 0;
+}
+
+/*Footer*/
+
+footer{
+	float: left;
+	width: 100%;
+}
+
+footer nav {
+  	width: 100%;
+  	float: left;
+}
+
+footer nav ul{
+  	width: 100%;
+  	float: left;
+}
+
+footer nav ul li {
+  	display: inline-block;
+}
+
+footer nav ul li a {
+  	display: inline-block;
+  	float: left;
+}
+
+footer nav .box {
+}
+
+/*And also*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}

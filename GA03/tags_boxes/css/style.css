@@ -1,0 +1,45 @@
+/* Give the h1 a red background, some padding, and a black border. */
+
+h1 {
+	background: red;
+	padding: 5px;
+	border: 2px solid black;
+}
+
+/* Give every p a blue background, white text, some padding, and a black border. */
+
+p {
+	background: blue;
+	color: white;
+	padding: 5px;
+	border: 2px dashed black;
+	margin-left: 50px;
+}
+
+/* Give every code element a white background, black text, a little padding, and a thin border. */
+
+code {
+	background: white;
+	color: black;
+	padding: 2px;
+	border: 1px solid green;
+}
+
+/* Try adding styles for the h2s, ols, and lis on this page. */
+
+h2{
+	color: #65ad56;
+}
+
+ol{
+	padding: 20px;
+	border: 3px dashed blue;
+	text-indent: 20px;
+	margin-left: 50px;
+	margin-right: 50%;
+}
+
+li{
+	color: gray;
+	margin-left: 20px;
+}

@@ -1,0 +1,101 @@
+.box {
+  border: 1px solid black;
+  background-color: #efefef;
+  margin: 0.5em;
+  padding: 3em 1em;
+  overflow: hidden;
+}
+
+/* Generic rules for page content positioning */
+
+.column {
+  float: left;
+}
+
+/* 'Clearing' rule for floats */
+
+header,
+section,
+footer,
+.content-row {
+  width: 100%;
+  float: left;
+}
+
+/* Header Section */
+
+header .logo {
+  width: 30%;
+  float: left;
+}
+
+header nav {
+  width: 70%;
+  float: right;
+  text-align: right;
+}
+
+nav ul {
+  float: right;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  float: left;
+}
+
+nav .box {
+  padding: 0.5em;
+}
+
+/* 
+  Sidebar and Main Section Layout
+  --
+  NB: Because sidebar content is less important than the main section content we have floated these two sections right (instead of left as standard).
+  This means that we have have the sidebar after the main div in the DOM but still have it on the left as per the design.
+*/
+
+.page-sidebar {
+  width: 20%;
+  float: right;
+}
+
+
+.main {
+  width: 80%;
+  float: right;
+}
+
+/* Main Content Sub Sections */
+
+.uneven-columns .column {
+  width: 75%;
+}
+
+.uneven-columns aside.column,
+.small-columns .column {
+  width: 25%;
+}
+
+.uneven-columns .column .box {
+  min-height: 200px;
+}
+
+.small-columns .column .box {
+  min-height: 75px;
+}
+
+/*
+  NB: Setting the min-height on the sidebar is a bit of a hack.
+  Normally we'd just let the content of the sidebar control its height,
+  rather than worrying about getting it perfect during the layout stage.
+  Layout is much more often about getting the widths and the spacing between elements right than it is about getting the heights right.
+*/
+.page-sidebar .box {
+  min-height: 520px;
+}

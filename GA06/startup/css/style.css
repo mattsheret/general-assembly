@@ -1,0 +1,144 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+a{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;	
+}
+
+h2{
+	font-family: 'Open Sans', serif;
+	font-weight: 800;
+}
+
+h3{
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 700;
+}
+
+header{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	color: yellow;
+	margin: 0;
+	padding: 20px;
+}
+
+header nav{
+	clear:left;
+	border-bottom: 5px solid yellow;
+}
+
+header nav ul{
+  	float: right;
+	padding:0;
+  	margin:0;
+  	list-style: none;
+}
+
+header nav ul li {
+  	float: left;
+  	display: inline-block;
+  	padding: 0;
+  	margin:0;
+  	list-style: none;
+  	text-align: center;
+}
+
+header nav ul li a {
+  	display: inline-block;
+  	text-align: center;
+  	padding: 0.5em;
+  	text-decoration: none;
+}
+
+.upsale{
+	margin:0;
+	padding:0;
+	background-color: gray;
+}
+
+.upsale p{
+	padding: 20px;
+	margin:0;
+	text-align: center;
+	font-style: italic;
+	font-weight: 900 italic;
+}
+
+.main{
+	background-color: #cccccc;/*delete later*/
+	background-image: url("../images/coworking.jpg");
+	width: 100%;
+	clear: both;
+	height: 500px;
+}
+
+.main .meet{
+	float: right;
+	width: 30%;
+	margin: 50px;
+	padding: 20px;
+	border: 2px solid gray;
+	background-color: rgba(255,255,255,0.3);
+}
+
+
+.links{
+	clear: both;
+}
+
+.promo{
+	width: calc(100%/3);
+	float: left;
+	background-color: white;
+}
+
+.placeholder{
+	padding: 30px;
+	border-right: 2px solid gray;
+}
+
+footer{
+	clear: left;
+	background-color: black;
+	color: white;
+	padding: 20px;
+}
+
+/*font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+/*And also*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}

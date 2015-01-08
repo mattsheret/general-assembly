@@ -1,0 +1,36 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.placeholder{
+	border: 1px solid black;
+	padding: 2em;
+	margin: 15px;
+	background-color: #ccc;
+}
+
+header{
+	float: left;
+	width: 100%;
+}
+
+section{
+	width: 70%;
+	float: left;
+}
+
+aside{
+	width: 15%;
+	float: left;
+}
+
+.right-column{
+	width: 15%;
+	float: left;
+}
+
+footer{
+	float: left;
+	width: 100%;
+}

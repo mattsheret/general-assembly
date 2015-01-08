@@ -1,0 +1,82 @@
+body{
+	font-family: helvetica;
+	color: #FEFFFF;
+	background-color: #F88C7E;
+	margin: 0px;
+}
+
+#header{
+	background-color: #FEFFFF;
+	color: #F88C7E;
+	margin-top: -15px;
+	padding: 30px;
+	padding-left: 200px;
+}
+
+#contents{
+	padding: 30px;
+	padding-top: 10px;
+	padding-left: 200px;
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+	font-weight: lighter;
+	font-size: 15px;
+	margin-left: 15px;
+}
+
+p{
+	font-style: italic;
+	font-size: 15px;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+
+a{
+	color: #FEFFFF;
+	text-decoration: none;
+	font-style: italic;
+}
+
+a.header{
+	color: #F88C7E;
+	font-style: normal;
+}
+
+dl{
+
+}
+
+dt{
+	padding-bottom: 5px;
+}
+
+dd{
+	font-style: italic;
+	padding-bottom: 5px;
+}
+
+nav{
+	font-weight: bold;
+	font-size: 25px;
+	padding-top: 10px;
+}
+
+img{
+	opacity: 0.7;/*I'd tried to look up putting a colour over the top of the image, but couldn't work out how. Opacity got the effect I wanted, but not sure if it's a good idea or not...?*/
+	float: right;/*Totally breaks as soon as the screen gets too small, but sounds like something we'll look at later*/
+	padding: 20px;
+	padding-right: 200px;
+}
+
+li{
+	list-style-type: ;
+}

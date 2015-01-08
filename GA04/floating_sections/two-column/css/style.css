@@ -1,0 +1,33 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.placeholder{
+	border: 16px solid rgba(255,255,255,0.8);
+	padding: 2em;
+}
+
+header{
+	background: red;
+
+}
+
+section{
+	background: yellow;
+	width: 60%;
+	float: left;
+}
+
+aside{
+	background: green;
+	width: 40%;
+	float: right;
+}
+
+footer{
+	background: blue;
+	clear: both;
+/*	float: left;
+	width: 100%;*/
+}

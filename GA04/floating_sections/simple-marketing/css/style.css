@@ -1,0 +1,41 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.placeholder{
+	border: 1px solid black;
+	padding: 2em;
+	margin: 15px;
+	background-color: #ccc;
+}
+
+header{
+	float: left;
+	width: 100%;
+}
+
+section{
+	width: 50%;
+	float: left;
+}
+
+.ad1{
+	width: calc(100%/3);
+	float: left;
+}
+
+.ad2{
+	width: calc(100%/3);
+	float: left;
+}
+
+.ad3{
+	width: calc(100%/3);
+	float: left;
+}
+
+footer{
+	float: left;
+	width: 100%;
+}

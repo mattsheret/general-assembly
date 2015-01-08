@@ -1,0 +1,64 @@
+html{
+	border-left: 10px solid gray;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;	
+	margin-left: 40px;
+	max-width: 40%;
+}
+
+img{
+	max-width: 100%;
+}
+
+a {
+	font-size: 45px;
+	color: red;
+	text-decoration: none;
+}
+
+nav {
+	padding-bottom: 30px;
+}
+
+nav a {
+	font-size: 18px;
+	color: #dddddd;
+	text-decoration: underline;
+	padding-right: 10px;
+}
+
+article{
+	margin: 5px 0;
+}
+
+h3{
+	color: #dddddd;
+	font-size: 30px;
+}
+
+h4,
+h4 a{
+	text-align: right;
+	padding-right: 10px;
+	font-size: 20px;
+}
+
+article h2 a{
+	font-size: 30px;
+	color: black;
+}
+
+hr{
+	margin-bottom: 40px;
+}
+
+header h2{
+	font-size: 25px;
+}
+
+footer,
+footer a{
+	font-size: 15px;
+}

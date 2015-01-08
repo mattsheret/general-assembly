@@ -1,0 +1,29 @@
+body {
+	padding: 0 48px;
+	font-family: Arial;
+}
+
+#notification {
+	border: 1px solid gray;
+	background: #efefef;
+	padding: 16px;
+}
+
+.message {
+	border: 1px solid black;
+	padding: 1em;
+	background: #ffddbb;
+	margin: 0.5em 0;
+}
+
+.message p {
+	margin: 0;
+}
+
+.error{
+	background: #ff0000;
+}
+
+.success{
+	background: #00ff00;
+}
