@@ -31,7 +31,7 @@ $(document).ready(function() {
     });
 
     // Store the image files in an array
-    var numbers = ["beachyheadsign","carcass","fields","gravelpath","puddles","sevensisters","wildflowers","woods", "chalkhorse", "crumblingcliffs","flowers","osbeacon","payanddisplaysign","signaltower","signpost","waypoint","wheatfield"];
+    var numbers = ["beachyheadsign","carcass","fields","gravelpath","puddles","sevensisters","wildflowers","woods", "chalkhorse", "crumblingcliffs","flowers","osbeacon","signaltower","signpost","waypoint","wheatfield"];
 
     // Set a variable so old images can be removed later
     var leadImage = $(".featuredImages");
