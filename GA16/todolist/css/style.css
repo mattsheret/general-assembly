@@ -1,0 +1,67 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	line-height: 1.2;
+	cursor: default;
+	font-family: sans-serif;
+}
+
+button {
+	margin-right: 1em;
+	margin-left:1em;
+	padding: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: white;
+	color: black;
+	text-align: center;
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+}
+
+header{
+	background-color: gray;
+	padding: 1em;
+}
+
+header form input{
+	width: 250px;
+}
+
+#main #edits{
+	display:none;
+	background-color: red;
+	padding: 1em;
+}
+
+#main #edits button{
+	/*do something to make the buttons move but later, much later*/
+}
+
+
+#main ul li{
+/*	display:none;*/
+	padding: 1em;
+	list-style: none;
+
+}
+
+.done{
+	text-decoration: line-through;
+	color: gray;
+}
+
+footer{
+	background-color: gray;
+	padding: 1em;
+}
+
+footer #tasksLeft{
+	/*	display:none;*/
+	font-size: 2em;
+	color: white;
+}
+
+class for done
+

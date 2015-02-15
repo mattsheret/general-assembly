@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Cash Register</title>
+
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+<body>
+
+  <div id="register">
+
+    <div id="ticket">
+
+      <h1>Today's bill</h1>
+
+      <table>
+        <tbody id="entries">
+<!--
+          <tr>
+            <td></td>
+            <td>1.1</td>
+          </tr>
+-->
+        </tbody>
+        <tfoot>
+          <tr>
+          <th>Total</th>
+          <th id="total">£0.00</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <form id="entry" autocomplete="off">
+      <input id="newEntry" autofocus placeholder="What did you spend?">
+    </form>
+
+  </div>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>

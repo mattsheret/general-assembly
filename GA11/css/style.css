@@ -1,0 +1,60 @@
+body {
+  background-image: url("http://upload.wikimedia.org/wikipedia/commons/8/81/Sky_over_Washington_Monument.JPG");
+}
+
+#inputTemp {
+  padding: 30px;
+  margin: 200px 0 0 100px;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.5);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+h1 {
+  font: 30px arial, sans-serif;
+  margin: 0;
+}
+
+input {
+  width: 100%;
+  margin: 0;
+}
+
+button {
+  width: 30%;    
+  margin: 0;
+  float: left;
+  text-align: center;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+#result {
+  padding: 30px;
+  margin: 200px 100px;
+  display: none;
+  font: bold 200px arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}

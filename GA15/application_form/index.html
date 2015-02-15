@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<header>
+		<h1>Course Application</h1>
+	</header>
+
+	<main>
+		<form>
+ 			<fieldset>
+ 				<legend>Your Contact Info</legend>
+ 					<label for="yourName">Your Name</label> <input type="text" id="yourName" placeholder="First"> <input type="text" id="yourName" placeholder="Last"><br>
+
+ 					<label for="yourPhone">Phone Number</label> <input type="number" id="yourPhone">–<input type="number" id="yourPhone">–<input type="number" id="yourPhone"><br>
+
+ 					<label for="yourAddress">Address</label> <input type="text" id="yourAddress" placeholder="Street Address"><br> 
+					<input type="text" id="yourAddress" placeholder="Address Line 2"><br>
+					<input type="text" id="yourAddress" placeholder="City"><input type="text" id="yourAddress" placeholder="State"><input type="text" id="yourAddress" placeholder="Postal Code"><br>
+			</fieldset>
+
+			<fieldset>
+				<legend>Skills & Interests</legend>
+					<label for="courseInterest">Course</label> 
+					<select  >
+						<option selected="selected" value="-1">Select One</option>
+						<optgroup label="Web Development">
+							<option value="fe">Front-end</option>
+							<option value="be">Back-end</option>
+						<optgroup label="Design">
+							<option value="vd">Visual Design</option>
+							<option value="ue">User Experience</option>
+					</select><br>
+
+					<label for="pastExperience">Past Experience</label> <textarea id="pastExperience"></textarea>
+			</fieldset>
+
+			<fieldset>
+				<legend>Anything else?</legend>
+					<label for="referral">Referral</label>
+					<select  >
+						<option value="no">None</option>
+						<option value="fr">Friend</option>
+						<option value="in">Instructor</option>
+						<option value="on">Online</option>
+					</select><br>
+
+					<label for="comments">Comments</label> <textarea id="comments"></textarea>
+
+			</fieldset>	
+
+		</form>
+
+	</main>
+
+		
+<!-- <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+ <script src="js/index.js"></script>-->
+
+</body>
+</html>

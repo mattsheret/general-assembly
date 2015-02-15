@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Matt's List</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<header>
+	<form id="newItems">
+		<input type="text" id="taskField" class="" value="" placheholder="" />
+		<button id="submitButton">submit</button><!--append-->
+	</form>
+</header>
+
+<div id="main">
+	
+	<div id="edits">
+		<button id="editTask">Edit</button>
+		<button id="deleteTask">Delete</button>
+	</div>
+	
+	<div id="list">
+		<ul id="todoList">
+		</ul>
+	</div>
+
+<footer>
+	<span id="tasksLeft">0</span>
+	<button id="clearAll">Clear all</button>
+	<button id="clearDone">Clear done</button>
+</footer>
+
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>
