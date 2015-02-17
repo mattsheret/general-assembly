@@ -1,10 +1,13 @@
 $(document).ready(function() {
-  // Run shuffle when the page loads and when the button is clicked
+  // Run shuffle when the page loads
   shuffle()
 
+  // Run shuffle when the button is clicked
   $("#shuffleButton").bind('click', shuffle);   
 
+  // The function that changes all of the page content
   function shuffle(){
+    // Text first
     // Hide any blockquotes currently visible
     $('#story div:nth-child(2) blockquote').css("display", "none");
     $('#story div:nth-child(9) blockquote').css("display", "none");
@@ -16,41 +19,25 @@ $(document).ready(function() {
       // Hide the memories
       for(var i = 0; i < divs.length; i++) $(divs[i]).remove();
       // Shuffle the memories            
-      var i = divs.length;
-      if ( i == 0 ) return false;
-      while ( --i ) {
-        var j = Math.floor( Math.random() * ( i + 1 ) );
-        var tempi = divs[i];
-        var tempj = divs[j];
-        divs[i] = tempj;
-        divs[j] = tempi;
-      } 
+      divs = shuffleArray(divs)
       // Display the memories one at a time as they're shuffled
       for(var i = 0; i < divs.length; i++) $(divs[i]).appendTo(this);
       $(".memory").fadeIn("1000");
     });
 
-    // Store the image files in an array
-    var numbers = ["beachyheadsign","carcass","fields","gravelpath","puddles","sevensisters","wildflowers","woods", "chalkhorse", "crumblingcliffs","flowers","osbeacon","signaltower","signpost","waypoint","wheatfield"];
+    // Now the photos
+    // Store the photos in an array
+    var photos = ["beachyheadsign","carcass","fields","gravelpath","puddles","sevensisters","wildflowers","woods", "chalkhorse", "crumblingcliffs","flowers","osbeacon","signaltower","signpost","waypoint","wheatfield"];
 
-    // Set a variable so old images can be removed later
+    // Set a variable so old photos can be removed later
     var leadImage = $(".featuredImages");
 
-    // Shuffle the images. I'm aware I'm duplicating maths used up there, but I'm not really sure how to make these more efficient.
-    var i = numbers.length;
-      if ( i == 0 ) return false;
-      while ( --i ) {
-        var j = Math.floor( Math.random() * ( i + 1 ) );
-        var tempi = numbers[i];
-        var tempj = numbers[j];
-        numbers[i] = tempj;
-        numbers[j] = tempi;
-      }
+    photos = shuffleArray(photos)
 
     // Set featured images based on the new order
-    var featuredImage1 = numbers[0];
-    var featuredImage2 = numbers[1];
-    var featuredImage3 = numbers[2];
+    var featuredImage1 = photos[0];
+    var featuredImage2 = photos[1];
+    var featuredImage3 = photos[2];
     
     // Remove any displayed images
     leadImage.remove()
@@ -64,6 +51,20 @@ $(document).ready(function() {
     $('#story div:nth-child(2) blockquote').css("display", "inline-block");
     $('#story div:nth-child(9) blockquote').css("display", "inline-block");
     
+  }
+
+  // The function that shuffles the arrays I want shuffled
+  function shuffleArray ( inputArray ) {
+    var i = inputArray.length;
+    if ( i == 0 ) return false;
+    while ( --i ) {
+      var j = Math.floor( Math.random() * ( i + 1 ) );
+      var tempi = inputArray[i];
+      var tempj = inputArray[j];
+      inputArray[i] = tempj;
+      inputArray[j] = tempi;
+    } 
+    return inputArray
   }
 
 });
