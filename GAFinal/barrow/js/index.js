@@ -6,30 +6,40 @@ $(document).ready(function() {
   $("#shuffleButton").bind('click', shuffle);   
 
   // The function that changes all of the page content
-  function shuffle(){
-    // Text first
-    // Hide any blockquotes currently visible
+  function shuffle() {
+    hideAll()
+    shuffleMemories()
+    shufflePhotos()
+    showQuotes()
+  }
+
+  // Function that hides the page content
+  function hideAll() {
+    var leadImages = $(".featuredImages");
     $("#story blockquote").hide();
     $(".memory").css("display","none");
-
+    leadImages.remove();
+  }
+  
+  // Function that shuffles order of the memories   
+  function shuffleMemories(){
     // Find the memories
     $("#story").each(function(){
       var divs = $(this).find('.memory');
       // Hide the memories
-      for(var i = 0; i < divs.length; i++) $(divs[i]).remove();
-      // Shuffle the memories            
+      $(divs).remove();
+      // // Shuffle the memories            
       divs = shuffleArray(divs)
       // Display the memories one at a time as they're shuffled
-      for(var i = 0; i < divs.length; i++) $(divs[i]).appendTo(this);
+      $(divs).appendTo(this);
       $(".memory").fadeIn("1000");
     });
-
-    // Now the photos
+  }
+  
+  //function that shuffles the featured photos  
+  function shufflePhotos() {
     // Store the photos in an array
     var photos = ["beachyheadsign","carcass","fields","gravelpath","puddles","sevensisters","wildflowers","woods", "chalkhorse", "crumblingcliffs","flowers","osbeacon","signaltower","signpost","waypoint","wheatfield"];
-
-    // Set a variable so old photos can be removed later
-    var leadImage = $(".featuredImages");
 
     photos = shuffleArray(photos)
 
@@ -38,14 +48,14 @@ $(document).ready(function() {
     var featuredImage2 = photos[1];
     var featuredImage3 = photos[2];
     
-    // Remove any displayed images
-    leadImage.remove()
-    
     // Display featured images after three specific memories
     $('#story div:nth-child(3)').after('<img class="featuredImages" src="images/'+ featuredImage1 +'.jpg">');
     $('#story div:nth-child(6)').after('<img class="featuredImages" src="images/'+ featuredImage2 +'.jpg">');
     $('#story div:nth-child(10)').after('<img class="featuredImages" src="images/'+ featuredImage3 +'.jpg">');
-    
+
+  }
+  
+  function showQuotes() {
     // Display two quotes
     $('#story div:nth-child(2) blockquote').show();
     $('#story div:nth-child(9) blockquote').show();
