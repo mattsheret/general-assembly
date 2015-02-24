@@ -9,8 +9,7 @@ $(document).ready(function() {
   function shuffle(){
     // Text first
     // Hide any blockquotes currently visible
-    $('#story div:nth-child(2) blockquote').css("display", "none");
-    $('#story div:nth-child(9) blockquote').css("display", "none");
+    $("#story blockquote").hide();
     $(".memory").css("display","none");
 
     // Find the memories
@@ -48,9 +47,9 @@ $(document).ready(function() {
     $('#story div:nth-child(10)').after('<img class="featuredImages" src="images/'+ featuredImage3 +'.jpg">');
     
     // Display two quotes
-    $('#story div:nth-child(2) blockquote').css("display", "inline-block");
-    $('#story div:nth-child(9) blockquote').css("display", "inline-block");
-    
+    $('#story div:nth-child(2) blockquote').show();
+    $('#story div:nth-child(9) blockquote').show();
+        
   }
 
   // The function that shuffles the arrays I want shuffled
